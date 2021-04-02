@@ -7,7 +7,7 @@ function App() {
   return (
     <Fragment>
       <Header />
-      <h1 className="mx-6 font-semibold text-5xl py-14 text-left md:text-center">Cotizador de Prestamos</h1>
+      <h1 className="mx-6 font-semibold text-5xl py-14 text-left md:text-center">Cotizador de Préstamos</h1>
       <Formulario />
       
     </Fragment>

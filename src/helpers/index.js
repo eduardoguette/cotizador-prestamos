@@ -40,5 +40,10 @@ export function calcularTotal(cantidad, plazo) {
     default:
       break;
   }
-  return Number(totalPlazo + totalCantidad + cantidad);
+  return parseInt(totalPlazo) + parseInt(totalCantidad) + parseInt(cantidad);
+}
+
+export function formatNumber(numero) {
+  let format = new Intl.NumberFormat("de-DE", {style: "currency", currency: "EUR"}).format(numero)
+  return format
 }

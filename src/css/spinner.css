@@ -1,0 +1,10 @@
+.loading {
+  border: 5px solid rgb(172, 172, 172);
+  border-top-color: #312e81;
+  animation: spinner .6s linear infinite;
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
