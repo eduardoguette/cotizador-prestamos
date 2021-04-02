@@ -49,14 +49,14 @@ const Formulario = () => {
               type='type'
               onChange={handleInput}
               placeholder='Ingrese un monto'
-              className='w-full ring ring-gray-200 focus:ring-blue-400 rounded-md py-2 px-3 focus:outline-none'
+              className='w-full border-2 border-gray-400 focus:border-blue-400 rounded-md py-2 px-3 focus:outline-none'
             />
           </div>
           <div className='form-control relative'>
             <label htmlFor='plazo-pagar' className='block font-medium text-xl py-5'>
               Plazo a pagar
             </label>
-            <button type='button' id='plazo-pagar' onClick={handleOptions} className='cursor-pointer selected ring ring-gray-200 focus:ring-blue-400 focus:outline-none rounded-md py-2 px-3 flex justify-between w-full'>
+            <button type='button' id='plazo-pagar' onClick={handleOptions} className='cursor-pointer selected border-2 border-gray-400 focus:border-blue-400 focus:outline-none rounded-md py-2 px-3 flex justify-between w-full'>
               <span>{optionSelected}</span>
               <box-icon type='solid' name='chevron-down'></box-icon>
             </button>

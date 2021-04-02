@@ -21,7 +21,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "buildcss": "npx postcss ./src/css/tailwind.css --use autoprefixer -d ./src/css/style.css",
+    "getcss": "npx tailwindcss-cli@latest build ./src/css/tailwind.css -o ./src/css/style.css",
     "prod": "NODE_ENV=production postcss ./src/css/tailwind.css -o ./src/css/style.css"
   },
   "eslintConfig": {
