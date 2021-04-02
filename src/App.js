@@ -1,24 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import { Fragment } from 'react';
+import Formulario from './components/Formulario';
+import Header from './components/Header';
 
+import './css/style.css';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <Header />
+      <h1 className="mx-6 font-semibold text-5xl py-14 text-left md:text-center">Cotizador de Prestamos</h1>
+      <Formulario />
+      
+    </Fragment>
   );
 }
 
