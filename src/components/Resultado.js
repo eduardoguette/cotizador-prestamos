@@ -16,14 +16,17 @@ const Resultado = ({ total, cantidad, optionSelected, loading, setloading }) => 
     setloading(true);
     setTimeout(() => {
       setloading(false);
+      window.scrollTo(0, document.documentElement.clientHeight)
     }, 1000);
 
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [total]);
 
+  
   if (loading) return <Spinner />;
   else
     return (
+      
       <div className='font-medium my-2 text-2xl flex-col flex ticket'>
         <h2 className='py-2 text-center font-medium my-4'>Resumen</h2>
         <hr className='border-dashed border-2 my-2' />
